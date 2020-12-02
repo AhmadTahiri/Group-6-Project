@@ -6,22 +6,30 @@
 		<center><h1 style="color:black; "><b>LTC's Products</h1></b>
 		<p style ="color: black; background-color: White;"> <b>LTC's Products</b>
 <script>
-function showOverlay() {
-  $('.overlay').show()
+function myFunction() 
+{
+  var txt;
+  if (confirm("The Audio-Technica ATH-M50X is on Sale!!")) {
+    txt = "Would you like to go to the sale page?";
+	} else {
+    txt = "no deals for you :(";
+	}		
+document.getElementById("demo").innerHTML = txt;
 }
-setTimeout(showOverlay, 2000)
+
 </script>
 </head>
 
 
 <body style= "background-color: light grey">
+<button onclick="myFunction()">Check For Deals!</button>
 
 
 	<header>
 		<div class="topnav">
-		<a class="active" href="website.html">Home</a>
-		<a href="page2.html">Login</a>
-		<a href="page3.html">Products</a>
+		<a class="active" href="index.html">Home</a>
+		<a href="LoginPage.html">Login</a>
+		<a href="Product.html">Products</a>
 		<div class="search-container">
 			<form action="/action_page.php">
 			<input type="text" placeholder="Search.." name="search">
